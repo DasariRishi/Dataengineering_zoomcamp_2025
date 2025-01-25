@@ -8,16 +8,16 @@ During the period of October 1st 2019 (inclusive) and November 1st 2019 (exclusi
 ![hello](Screenshot2.png)
 2. In between 1 (exclusive) and 3 miles (inclusive),
 
-![hello](homework1/Screenshot3.png)
+![hello](Screenshot3.png)
 4. In between 3 (exclusive) and 7 miles (inclusive),
 
-![hello](homework1/Screenshot4.png)
+![hello](Screenshot4.png)
 5. In between 7 (exclusive) and 10 miles (inclusive),
 
-![hello](homework1/Screenshot5.png)
+![hello](Screenshot5.png)
 6. Over 10 miles
 
-![hello](homework1/Screenshot6.png)
+![hello](Screenshot6.png)
 
 Answer: - 104,802;  198,924;  109,603;  27,678;  35,189
 
@@ -29,7 +29,7 @@ Use the pick up time for your calculations.
 
 Tip: For every day, we only care about one single trip with the longest distance. 
 
-![hello](homework1/Screenshot7.png)
+![hello](Screenshot7.png)
 
 Answer: - 2019-10-31
 
@@ -40,7 +40,7 @@ Which were the top pickup locations with over 13,000 in
 
 Consider only `lpep_pickup_datetime` when filtering by date.
 
-![hello](homework1/Screenshot8.png)
+![hello](Screenshot8.png)
 
 Answer: - East Harlem North, East Harlem South, Morningside Heights
 
@@ -54,7 +54,7 @@ Note: it's `tip` , not `trip`
 
 We need the name of the zone, not the ID.
 
-![hello](homework1/Screenshot1.png)
+![hello](Screenshot1.png)
 
 Answer: - JFK Airport
 
