@@ -17,3 +17,5 @@ During the period of October 1st 2019 (inclusive) and November 1st 2019 (exclusi
 6. Over 10 miles
 
 ![hello](homework1/Screenshot6.png)
+
+Answer: - 104,802;  198,924;  109,603;  27,678;  35,189
