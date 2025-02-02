@@ -9,7 +9,14 @@ So far in the course, we processed data for the year 2019 and 2020. Your task is
 ![backfillimage2](images/Screenshot3.png)
 using the scheduling flow to update the values backfill from 2021 january to 2021 july
 
+![added2021dataimage1](images/Screenshot4.png)
+
+![added2021dataimage2](images/Screenshot5.png)
+
+The following files have been added to the bucket and merged with the complete tables for yellow_tripdata and green_tripdata tables.
+
 # Quiz Questions
+
 ## Question 1.
 1. Within the execution for Yellow Taxi data for the year 2020 and month 12: what is the uncompressed file size (i.e. the output file yellow_tripdata_2020-12.csv of the extract task)?
 
@@ -22,7 +29,7 @@ using the scheduling flow to update the values backfill from 2021 january to 202
 ## Question 3.
 3. How many rows are there for the Yellow Taxi data for all CSV files in the year 2020?
 
-The following query was exicuted on the bigquery. merged yellow_tripdata table
+The following query was executed in the bigquery on merged yellow_tripdata table
 
 ```sql
 SELECT COUNT(*) AS row_count
@@ -37,7 +44,8 @@ rounding off to the nearest option
 ### Answer: 24,648,499
 ## Question 4.
 4. How many rows are there for the Green Taxi data for all CSV files in the year 2020?
-The following query was exicuted on the bigquery. merged green_tripdata table
+
+The following query was executed in the bigquery on merged green_tripdata table
 
 ```sql
 SELECT COUNT(*) AS row_count
@@ -54,8 +62,17 @@ rounding off to the nearest option
 
 ## Question 5.
 5. How many rows are there for the Yellow Taxi data for the March 2021 CSV file?
+```sql
+SELECT COUNT(*) AS row_count
+FROM `sunny(project_id).zoomcamp.yellow_tripdata`
+WHERE date(tpep_pickup_datetime)>='2021-03-01' and date(tpep_pickup_datetime)<='2021-03-31'
+```
+| Row | row_count  |
+|-----|-----------|
+|  1  | 1925130    |
 
-### Answer:
+rounding off to the nearest option
+### Answer: 1,925,152
 
 ## Question 6.
 6. How would you configure the timezone to New York in a Schedule trigger?
