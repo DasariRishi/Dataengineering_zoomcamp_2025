@@ -19,4 +19,16 @@ using the scheduling flow to update the values backfill from 2021 january to 202
 2. What is the rendered value of the variable file when the inputs taxi is set to green, year is set to 2020, and month is set to 04 during execution?
 ### Answer : green_tripdata_2020-04.csv
 
+## Question 3.
+3. How many rows are there for the Yellow Taxi data for all CSV files in the year 2020?
 
+```sql
+SELECT COUNT(*) AS row_count
+FROM `sunny-studio-449422-q9.zoomcamp.yellow_tripdata`
+WHERE EXTRACT(YEAR FROM tpep_pickup_datetime) = 2020;
+
+### Answer: 24,648,499
+## Question 4.
+4. How many rows are there for the Green Taxi data for all CSV files in the year 2020? 
+
+### Answer: 1,734,051
