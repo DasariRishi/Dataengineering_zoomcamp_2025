@@ -26,7 +26,7 @@ The following query was exicuted on the bigquery. merged yellow_tripdata table
 
 ```sql
 SELECT COUNT(*) AS row_count
-FROM `sunny-studio-449422-q9.zoomcamp.yellow_tripdata`
+FROM `sunny(project_id).zoomcamp.yellow_tripdata`
 WHERE EXTRACT(YEAR FROM tpep_pickup_datetime) = 2020;
 ```
 | Row | row_count  |
@@ -36,6 +36,18 @@ WHERE EXTRACT(YEAR FROM tpep_pickup_datetime) = 2020;
 rounding off to the nearest option
 ### Answer: 24,648,499
 ## Question 4.
-4. How many rows are there for the Green Taxi data for all CSV files in the year 2020? 
+4. How many rows are there for the Green Taxi data for all CSV files in the year 2020?
+The following query was exicuted on the bigquery. merged green_tripdata table
 
+```sql
+SELECT COUNT(*) AS row_count
+FROM `sunny(project_id).zoomcamp.green_tripdata`
+WHERE date(lpep_pickup_datetime)>='2020-01-01' and date(lpep_pickup_datetime)<='2020-12-31'
+--WHERE EXTRACT(YEAR FROM lpep_pickup_datetime) = 2020;
+```
+| Row | row_count  |
+|-----|-----------|
+|  1  | 1734038    |
+
+rounding off to the nearest option
 ### Answer: 1,734,051
