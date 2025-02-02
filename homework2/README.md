@@ -51,3 +51,21 @@ WHERE date(lpep_pickup_datetime)>='2020-01-01' and date(lpep_pickup_datetime)<='
 
 rounding off to the nearest option
 ### Answer: 1,734,051
+
+## Question 5.
+5. How many rows are there for the Yellow Taxi data for the March 2021 CSV file?
+
+### Answer:
+
+## Question 6.
+6. How would you configure the timezone to New York in a Schedule trigger?
+
+Here is the configuration for setting the timezone to New York in a Schedule trigger:
+
+```yaml
+triggers:
+  - schedule:
+      cron: "0 0 * * *"
+      timezone: "America/New_York"
+```
+### Answer: Add a timezone property set to *America/New_York* in the Schedule trigger configuration
