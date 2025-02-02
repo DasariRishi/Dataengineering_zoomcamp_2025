@@ -27,7 +27,8 @@ The following query was exicuted on the bigquery. merged yellow_tripdata table
 ```sql
 SELECT COUNT(*) AS row_count
 FROM `sunny-studio-449422-q9.zoomcamp.yellow_tripdata`
-WHERE EXTRACT(YEAR FROM tpep_pickup_datetime) = 2020; ```
+WHERE EXTRACT(YEAR FROM tpep_pickup_datetime) = 2020;
+```
 
 ### Answer: 24,648,499
 ## Question 4.
