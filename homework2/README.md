@@ -29,7 +29,11 @@ SELECT COUNT(*) AS row_count
 FROM `sunny-studio-449422-q9.zoomcamp.yellow_tripdata`
 WHERE EXTRACT(YEAR FROM tpep_pickup_datetime) = 2020;
 ```
+| Row | row_count  |
+|-----|-----------|
+|  1  | 24,648,647 |
 
+rounding off to the nearest option
 ### Answer: 24,648,499
 ## Question 4.
 4. How many rows are there for the Green Taxi data for all CSV files in the year 2020? 
